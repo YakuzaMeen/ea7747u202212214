@@ -1,0 +1,72 @@
+{
+  "toolbar": {
+    "title": "Plataforma de Gestión de Centros Outdoor TrailGo",
+    "language-selector": "Seleccionar idioma",
+    "toggle-navigation": "Mostrar u ocultar menú de navegación"
+  },
+  "languages": {
+    "en": "Inglés",
+    "es": "Español"
+  },
+  "navigation": {
+    "label": "Navegación principal",
+    "home": "Inicio",
+    "new-reservation": "Nueva Reserva"
+  },
+  "home": {
+    "title": "Inicio",
+    "description": "Reservas Inteligentes y Gestión de Capacidad para Centros Outdoor.",
+    "my-outdoor-centers": "Mis Centros Outdoor"
+  },
+  "activity-types": {
+    "hiking": "Senderismo",
+    "running": "Carrera",
+    "cycling": "Ciclismo",
+    "trekking": "Trekking"
+  },
+  "outdoor-center-summary": {
+    "reservations": "Reservas",
+    "participants": "{{count}} participantes",
+    "empty": "Vacío",
+    "total-participants": "Total de Participantes",
+    "available-capacity": "Capacidad Disponible"
+  },
+  "reservation-form": {
+    "title": "Nueva Reserva",
+    "subtitle": "Registre Participantes en su Centro Outdoor",
+    "activity-type": "Tipo de actividad",
+    "participant-name": "Nombre del participante",
+    "participants": "Participantes",
+    "outdoor-center-hint": "{{name}} · Capacidad disponible: {{capacity}}",
+    "weather": {
+      "select-activity": "Seleccione una actividad para ver la temperatura actual.",
+      "loading": "Consultando la temperatura actual...",
+      "current-temperature": "Temperatura actual: {{temperature}} {{unit}}",
+      "unavailable": "No se pudo obtener la temperatura actual. No se puede crear la reserva hasta obtener una temperatura válida.",
+      "retry": "Reintentar"
+    },
+    "errors": {
+      "activity-type-required": "El tipo de actividad es obligatorio.",
+      "participant-name-required": "El nombre del participante es obligatorio.",
+      "participant-name-blank": "El nombre del participante no puede contener solo espacios.",
+      "participants-required": "La cantidad de participantes es obligatoria.",
+      "participants-min": "La cantidad de participantes debe ser mayor que cero.",
+      "participants-integer": "La cantidad de participantes debe ser un número entero.",
+      "participants-exceeds-capacity": "La cantidad de participantes no puede superar la capacidad disponible ({{capacity}}).",
+      "insufficient-capacity": "No hay capacidad disponible suficiente. Revise la cantidad de participantes.",
+      "outdoor-center-not-found": "No se encontró un centro outdoor para la actividad seleccionada.",
+      "create-failed": "No se pudo guardar la reserva. Inténtelo nuevamente."
+    }
+  },
+  "common": {
+    "create": "Crear",
+    "cancel": "Cancelar",
+    "loading": "Cargando",
+    "load-failed": "No se pudieron cargar los centros outdoor."
+  },
+  "page-not-found": {
+    "title": "Página no encontrada",
+    "message": "La página '{{path}}' no fue encontrada.",
+    "go-home": "Ir a Inicio"
+  }
+}

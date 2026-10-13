@@ -1,0 +1,72 @@
+{
+  "toolbar": {
+    "title": "TrailGo Outdoor Center Management Platform",
+    "language-selector": "Select language",
+    "toggle-navigation": "Toggle navigation menu"
+  },
+  "languages": {
+    "en": "English",
+    "es": "Spanish"
+  },
+  "navigation": {
+    "label": "Main navigation",
+    "home": "Home",
+    "new-reservation": "New Reservation"
+  },
+  "home": {
+    "title": "Home",
+    "description": "Smart Reservations and Capacity Management for Outdoor Centers.",
+    "my-outdoor-centers": "My Outdoor Centers"
+  },
+  "activity-types": {
+    "hiking": "Hiking",
+    "running": "Running",
+    "cycling": "Cycling",
+    "trekking": "Trekking"
+  },
+  "outdoor-center-summary": {
+    "reservations": "Reservations",
+    "participants": "{{count}} participants",
+    "empty": "Empty",
+    "total-participants": "Total Participants",
+    "available-capacity": "Available Capacity"
+  },
+  "reservation-form": {
+    "title": "New Reservation",
+    "subtitle": "Register Participants at Your Outdoor Center",
+    "activity-type": "Activity type",
+    "participant-name": "Participant name",
+    "participants": "Participants",
+    "outdoor-center-hint": "{{name}} · Available capacity: {{capacity}}",
+    "weather": {
+      "select-activity": "Select an activity to see the current temperature.",
+      "loading": "Checking current temperature...",
+      "current-temperature": "Current temperature: {{temperature}} {{unit}}",
+      "unavailable": "The current temperature could not be retrieved. The reservation cannot be created until a valid temperature is obtained.",
+      "retry": "Retry"
+    },
+    "errors": {
+      "activity-type-required": "Activity type is required.",
+      "participant-name-required": "Participant name is required.",
+      "participant-name-blank": "Participant name cannot contain only spaces.",
+      "participants-required": "Participants is required.",
+      "participants-min": "Participants must be greater than zero.",
+      "participants-integer": "Participants must be a whole number.",
+      "participants-exceeds-capacity": "Participants cannot exceed the available capacity ({{capacity}}).",
+      "insufficient-capacity": "There is not enough available capacity. Please review the number of participants.",
+      "outdoor-center-not-found": "No outdoor center was found for the selected activity.",
+      "create-failed": "The reservation could not be saved. Please try again."
+    }
+  },
+  "common": {
+    "create": "Create",
+    "cancel": "Cancel",
+    "loading": "Loading",
+    "load-failed": "The outdoor centers could not be loaded."
+  },
+  "page-not-found": {
+    "title": "Page not found",
+    "message": "The page '{{path}}' was not found.",
+    "go-home": "Go to Home"
+  }
+}

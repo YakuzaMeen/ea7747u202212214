@@ -10,7 +10,6 @@ import {MatButtonModule} from '@angular/material/button';
 import {TranslatePipe} from '@ngx-translate/core';
 import {map} from 'rxjs';
 import {LanguageSwitcher} from '../language-switcher/language-switcher';
-import {environment} from '../../../../../environments/environment';
 
 /**
  * Application shell with toolbar and side navigation.
@@ -35,7 +34,6 @@ import {environment} from '../../../../../environments/environment';
 })
 export class Layout {
   private readonly breakpointObserver = inject(BreakpointObserver);
-  protected readonly logoPath = environment.logoPath;
   protected readonly isHandset = toSignal(
     this.breakpointObserver.observe(Breakpoints.Handset).pipe(map(result => result.matches)),
     {initialValue: false}
