@@ -1,0 +1,29 @@
+<mat-card class="summary-card" appearance="outlined" role="region" [attr.aria-label]="outdoorCenter().name">
+  <mat-card-header>
+    <mat-card-title>{{ outdoorCenter().name }}</mat-card-title>
+    <mat-card-subtitle>{{ 'activity-types.' + outdoorCenter().activityType | translate }}</mat-card-subtitle>
+  </mat-card-header>
+
+  <mat-card-content class="summary-content">
+    @if (outdoorCenter().hasReservations) {
+      <mat-list [attr.aria-label]="'outdoor-center-summary.reservations' | translate">
+        @for (reservation of outdoorCenter().reservations; track reservation.id) {
+          <mat-list-item>
+            <span matListItemTitle>{{ reservation.participantName }}</span>
+            <span matListItemLine>
+              {{ 'outdoor-center-summary.participants' | translate: {count: reservation.participants} }}
+              · {{ reservation.reservedAt | date: 'short' }}
+            </span>
+          </mat-list-item>
+        }
+      </mat-list>
+    } @else {
+      <p class="empty">{{ 'outdoor-center-summary.empty' | translate }}</p>
+    }
+  </mat-card-content>
+
+  <mat-card-footer class="summary-footer">
+    <span>{{ 'outdoor-center-summary.total-participants' | translate }}: <strong>{{ outdoorCenter().totalParticipants }}</strong></span>
+    <span>{{ 'outdoor-center-summary.available-capacity' | translate }}: <strong>{{ outdoorCenter().availableCapacity }}</strong></span>
+  </mat-card-footer>
+</mat-card>

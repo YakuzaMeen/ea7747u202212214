@@ -1,0 +1,13 @@
+@if (store.loading()) {
+  <mat-progress-bar mode="indeterminate" [attr.aria-label]="'common.loading' | translate"/>
+}
+@if (store.error(); as error) {
+  <p class="error-message" role="alert">{{ 'common.' + error | translate }}</p>
+}
+<mat-grid-list [cols]="columns()" rowHeight="340px" gutterSize="16px">
+  @for (outdoorCenter of store.outdoorCenters(); track outdoorCenter.id) {
+    <mat-grid-tile>
+      <app-outdoor-center-summary [outdoorCenter]="outdoorCenter"/>
+    </mat-grid-tile>
+  }
+</mat-grid-list>

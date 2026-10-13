@@ -1,0 +1,33 @@
+.reservation-form {
+  max-width: 560px;
+}
+
+.subtitle {
+  color: var(--mat-sys-on-surface-variant);
+  margin-bottom: 24px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.weather-content {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+}
+
+@media (max-width: 599px) {
+  .actions {
+    flex-direction: column-reverse;
+  }
+}
